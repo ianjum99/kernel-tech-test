@@ -62,11 +62,8 @@ Run the example queries from schema.sql to validate:
 **Deliberate architectural decisions and their implications:**
 
 - **Write scaling**: Single Postgres writer scales to ~10k inserts/sec
-  - *Next step*: Horizontal sharding by tenant_id for 100k+ inserts/sec
 - **Query complexity**: Some analytical patterns require expensive JOINs
-  - *Mitigation*: Materialized views for hot data, pre-aggregated OLAP cubes for complex analytics
 - **Storage costs**: Full EAV retention can be expensive at billion-row scale
-  - *Mitigation*: Automated lifecycle policies (see notes.md) move cold data to S3
 
 
 **What's not included** (requires additional time):
