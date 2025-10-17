@@ -52,9 +52,10 @@ What this creates: Tables, indexes, materialized views, example queries
 
 ### 3. Test Performance (2 minutes)
 Run the example queries from schema.sql to validate:
-Multi-attribute filtering (operational workload)
-Temperature distribution analysis (analytical workload)
-Expected Performance: Sub-100ms operational queries, 1-5 second analytical queries
+
+- Multi-attribute filtering (operational workload)
+- Temperature distribution analysis (analytical workload)
+- Expected Performance: Sub-100ms operational queries, 1-5 second analytical queries
 
 ## Trade-offs & Limitations
 
